@@ -1,5 +1,7 @@
 # Gulp and Compass Demo
 
+Slides discussing this code are online at <http://www.slideshare.net/fatleaf/gulp-and-compass>.
+
 ## System Requirements
 
 * Ruby (https://www.ruby-lang.org) and related:
