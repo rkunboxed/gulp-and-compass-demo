@@ -1,0 +1,22 @@
+// Primary SCSS file.
+
+// Include partials with no output first.
+@import "base";
+@import "compass/css3";
+@import "compass/utilities";
+@import "susy";
+@import "functions";
+@import "mixins";
+
+// Now pull in additional styles, from generic to most project-specific.
+
+// -- Vendor libs.
+@import "vendor/normalize";
+
+// -- These are mostly generic, you generally won't edit them.
+@import "sprites";
+@import "elements";
+
+// -- Other global and misc styles not handled elsewhere.
+@import "main";
+

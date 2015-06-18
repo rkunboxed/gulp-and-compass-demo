@@ -1,0 +1,25 @@
+// Custom Sass mixins.
+
+// Rem output with px fallback.
+// Your HTML tag must be assigned a font-size of 62.5%
+// to use this mixin properly.
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// Specify the placeholder color for an input field.
+@mixin placeholder-color($color) {
+	::-webkit-input-placeholder {
+		color: $color;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: $color;
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: $color;
+	}
+	:-ms-input-placeholder {
+		color: $color;
+	}
+}

@@ -1,0 +1,74 @@
+// Sass/Compass vars and configs.
+// ------------------------------
+
+// Colors.
+// =======
+
+// By color.
+$color-black: #000;
+$color-white: #FFF;
+$color-gray-light: #EBEBEB;
+
+// By usage.
+$color-text-input: #999;
+$color-text-input-focus: #111;
+$color-link: #E82425;
+$color-link-visited: $color-link;
+$color-link-hover: lighten($color-link, 6%);
+$color-text-main: $color-black;
+$color-background-button: #FFF;
+$color-border-button: #CCCCCC;
+$color-border-button-hover: #AAAAAA;
+$color-border-button-focus: #999999;
+$color-border-input: #CCC;
+$color-border-abbr: #666;
+$color-border-table: #CCCCCC;
+
+// Layout.
+// =======
+
+// Typography.
+// ===========
+$font-main: 'Helvetica Neue', Arial, sans-serif;
+$font-mono: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+// Sizes (rem values that get fed to font-size() mixin).
+$font-size-default: 1.4;
+$font-size-h1: 5.8;
+$font-size-h2: 2.8;
+$font-size-h3: 1.8;
+$font-size-h4: 1.8;
+$font-size-h5: 1.4;
+$font-size-h6: 1.2;
+
+// Layout.
+// =======
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 1/8,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+
+    // Uncomment below to view the grid.
+    // image: show-columns,
+
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: false,
+    clearfix: false,
+    rem: true,
+  )
+);

@@ -1,0 +1,25 @@
+// Primary style partial.
+
+// Basics.
+.page-content {
+	@include container;
+	max-width: 980px;
+}
+.main {
+	@include span(12);
+}
+
+// Add the sprite-based star.
+.star {
+	float: right;
+
+	// The myicons-sprite() dynamic mixin applies the sprite
+	// to this element as a bg image positioned for the image
+	// we request ('star.png').
+	@include myicons-sprite('star');
+
+	// Dynamically created functions are also available to
+	// deliver information about the specific image.
+	height: myicons-sprite-height('star');
+	width: myicons-sprite-width('star');
+}
