@@ -1,0 +1,13 @@
+bower_components/
+node_modules/
+npm-debug.log
+tests/_output/*
+.sass-cache/
+
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
